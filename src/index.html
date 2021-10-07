@@ -1,1 +1,11 @@
-{% include test.html arg: '34' %}
+---
+eleventyComputed:
+    notArray: "{{ data.dynamicValue }}"
+    array:
+        -
+            staticKey: "static value"
+            dynamicKey: "{{ data.dynamicValue }}"
+---
+
+{{ notArray | log }}
+{{ array | first | log }}
