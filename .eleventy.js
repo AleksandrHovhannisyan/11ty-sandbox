@@ -1,6 +1,15 @@
+const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+const { increment } = require('./config/filters');
+
 const TEMPLATE_ENGINE = 'liquid';
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "onrequest",
+    functionsDir: "./netlify/functions/",
+  });
+  eleventyConfig.addFilter('increment', increment);
+
   return {
     dir: {
         input: 'src',
