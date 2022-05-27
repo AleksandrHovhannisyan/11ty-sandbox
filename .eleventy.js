@@ -1,6 +1,10 @@
 const TEMPLATE_ENGINE = 'liquid';
 
 module.exports = (eleventyConfig) => {
+  // eleventyConfig.setLiquidOptions({
+  //   dynamicPartials: false,
+  // });
+
   return {
     dir: {
         input: 'src',
