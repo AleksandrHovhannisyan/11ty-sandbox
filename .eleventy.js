@@ -1,6 +1,10 @@
 const TEMPLATE_ENGINE = 'liquid';
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.on('eleventy.after', () => {
+    eleventyConfig.addGlobalData('key', 'value');
+    console.log(`eleventyConfig.globalData in eleventy.js`, eleventyConfig.globalData);
+  });
   return {
     dir: {
         input: 'src',
