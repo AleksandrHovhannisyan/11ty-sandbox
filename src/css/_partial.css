@@ -1,0 +1,3 @@
+body {
+  background-color: white; /* change me and observe that styles.css does not rebuild */
+}
