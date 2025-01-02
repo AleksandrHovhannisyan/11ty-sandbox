@@ -1,12 +1,12 @@
 const TEMPLATE_ENGINE = 'liquid';
 
-module.exports = (eleventyConfig) => {
+export default function(eleventyConfig) {
   return {
     dir: {
-        input: 'src',
-        output: '_site',
-        includes: '_includes',
-        layout: '_layouts'
+      input: 'src',
+      output: '_site',
+      includes: '_includes',
+      layout: '_layouts'
     },
     dataTemplateEngine: TEMPLATE_ENGINE,
     markdownTemplateEngine: TEMPLATE_ENGINE,

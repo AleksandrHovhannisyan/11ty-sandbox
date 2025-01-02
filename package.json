@@ -1,12 +1,12 @@
 {
   "name": "sandbox",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "serve": "npx @11ty/eleventy --serve --incremental"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "3.0.0"
   }
 }
