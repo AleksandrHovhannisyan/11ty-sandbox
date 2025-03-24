@@ -1,0 +1,9 @@
+---
+layout: base
+---
+
+<!-- Output: ['override']. This is bad/unexpected. -->
+{{ computedArray | log }}
+
+<!-- Output: ['base', 'override']. This is expected. -->
+{{ nonComputedArray | log }}
