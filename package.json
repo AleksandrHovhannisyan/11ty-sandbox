@@ -7,6 +7,6 @@
     "serve": "eleventy --serve --incremental"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.0.1-alpha.1"
+    "@11ty/eleventy": "github:11ty/eleventy#cache-refactor"
   }
 }
