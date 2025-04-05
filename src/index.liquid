@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<!-- Output: ['override']. This is bad/unexpected. -->
+<!-- Output: ['override']. Expected: ['base'] (from the layout) because this page has no overrides (another page that uses the same layout does). -->
 {{ computedArray | log }}
 
 <!-- Output: ['base']. This is expected. -->
